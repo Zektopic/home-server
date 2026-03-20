@@ -1,8 +1,8 @@
 services:
-  # Plex Meta Manager - Automatic Metadata Manager for Plex
-  plexmm:
-    image: lscr.io/linuxserver/plex-meta-manager:latest
-    container_name: plexmm
+  # Kometa (formerly Plex Meta Manager) - Automatic Metadata Manager for Plex
+  kometa:
+    image: lscr.io/linuxserver/kometa:latest
+    container_name: kometa
     security_opt:
       - no-new-privileges:true
     restart: "no"
@@ -11,10 +11,10 @@ services:
       TZ: $TZ
       PUID: $PUID
       PGID: $PGID
-      PMM_CONFIG: /config/config.yml #optional
-      PMM_TIME: 03:00 #optional
-      PMM_RUN: "True" #optional
-      PMM_TEST: "False" #optional
-      PMM_NO_MISSING: "False" #optional
+      KOMETA_CONFIG: /config/config.yml #optional
+      KOMETA_TIME: 03:00 #optional
+      KOMETA_RUN: "True" #optional
+      KOMETA_TEST: "False" #optional
+      KOMETA_NO_MISSING: "False" #optional
     volumes:
-      - $DOCKERDIR/appdata/plex-meta-manager:/config
+      - $DOCKERDIR/appdata/kometa:/config

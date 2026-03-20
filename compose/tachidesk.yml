@@ -1,6 +1,6 @@
 services:
   suwayomi:
-    image: ghcr.io/suwayomi/tachidesk:preview
+    image: ghcr.io/suwayomi/suwayomi-server:preview
     environment:
       TZ: $TZ # Use TZ database name from https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
     #  #################################################################################################

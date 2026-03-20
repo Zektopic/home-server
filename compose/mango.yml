@@ -1,6 +1,6 @@
 services:
   mango:
-    image: hkalexling/mango
+    image: hkalexling/mango:latest
     container_name: mango
     expose:
       - 9000

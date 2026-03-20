@@ -1,7 +1,7 @@
 services:
   # SyncThing - Keep folders in Sync
   syncthing:
-    image: lscr.io/linuxserver/syncthing
+    image: lscr.io/linuxserver/syncthing:latest
     container_name: syncthing
     security_opt:
       - no-new-privileges:true

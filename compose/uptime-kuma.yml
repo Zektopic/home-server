@@ -1,7 +1,7 @@
 services:
   # Uptime Kuma - Status Page & Monitoring Server
   uptime-kuma:
-    image: louislam/uptime-kuma
+    image: louislam/uptime-kuma:latest
     container_name: uptime-kuma
     security_opt:
       - no-new-privileges:true

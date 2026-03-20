@@ -1,7 +1,7 @@
 services:
   # Picard - Music Library Tagging and Management
   picard:
-    image: mikenye/picard:latest
+    image: jlesage/picard:latest
     container_name: picard
     security_opt:
       - no-new-privileges:true

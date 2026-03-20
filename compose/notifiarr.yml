@@ -1,7 +1,7 @@
 services:
   # Client for Notifiarr.com
   notifiarr:
-    image: golift/notifiarr
+    image: golift/notifiarr:latest
     container_name: notifiarr
     security_opt:
       - no-new-privileges:true

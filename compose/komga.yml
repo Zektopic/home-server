@@ -1,6 +1,6 @@
 services:
   komga:
-    image: gotson/komga
+    image: gotson/komga:latest
     container_name: komga
     volumes:
       - $DOCKERDIR/appdata/komga:/config

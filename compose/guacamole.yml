@@ -38,7 +38,7 @@ services:
 
   # Guacamole Daemon - Needed for Guacamole
   guacd:
-    image: guacamole/guacd
+    image: guacamole/guacd:latest
     container_name: guacd
     security_opt:
       - no-new-privileges:true

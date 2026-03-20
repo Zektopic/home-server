@@ -1,6 +1,6 @@
 services:
   pic:
-    image: meisnate12/plex-image-cleanup
+    image: meisnate12/plex-image-cleanup:latest
     container_name: pic
     environment:
       - TZ=$TZ #optional

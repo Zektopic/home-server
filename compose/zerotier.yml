@@ -1,7 +1,7 @@
 services:
   # ZeroTier-One - Private Network over Internet
   zerotier:
-    image: zerotier/zerotier-synology:latest
+    image: zerotier/zerotier:latest
     container_name: zerotier
     security_opt:
       - no-new-privileges:true

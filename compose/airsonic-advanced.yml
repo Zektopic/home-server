@@ -1,7 +1,7 @@
 services:
   # Airsonic Advanced - Music Server
   airsonic-advanced:
-    image: lscr.io/linuxserver/airsonic-advanced
+    image: lscr.io/linuxserver/airsonic-advanced:latest
     container_name: airsonic-advanced
     networks:
       - default

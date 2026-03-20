@@ -1,7 +1,7 @@
 services:
   # Cloudflare DDNS - Dynamic DNS Updater
   ddns-updater:
-    image: qmcgaw/ddns-updater
+    image: qmcgaw/ddns-updater:latest
     container_name: ddns-updater
     restart: unless-stopped
     profiles: ["core", "all", "dns"]

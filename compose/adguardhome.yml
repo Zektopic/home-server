@@ -2,7 +2,7 @@ services:
   # AdGuard Home - DNS AdBlocking
   adguardhome:
     container_name: adguardhome
-    image: adguard/adguardhome
+    image: adguard/adguardhome:latest
     restart: unless-stopped
     profiles: ["core", "all", "dns"]
     network_mode: host
